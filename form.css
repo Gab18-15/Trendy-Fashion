@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bodoni Moda SC", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e5e5e5;
+    color: #333; /* Color plomo para el texto */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    color: #000; /* Negro */
+    margin-bottom: 1rem;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+    width: 45%;
+    padding: 0.75rem;
+    background-color: #333; /* Color plomo oscuro */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.tab-buttons button:hover {
+    background-color: #555; /* Gris oscuro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: #555;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.google-login, .facebook-login {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.google-login {
+    background-color: #333; /* Negro */
+}
+
+.facebook-login {
+    background-color: #555; /* Plomo oscuro */
+}
+
+.google-login:hover, .facebook-login:hover {
+    background-color: #777; /* Gris intermedio */
+}

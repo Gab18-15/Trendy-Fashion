@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendy Fashion - Iniciar Sesión o Registrarse</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Bienvenido a Trendy Fashion</h2>
+            <div class="tab-buttons">
+                <button id="login-tab">Iniciar Sesión</button>
+                <button id="register-tab">Registrarse</button>
+            </div>
+            
+            <!-- Formulario de Iniciar Sesión -->
+            <form id="login-form" method="POST" style="display: block;">
+                <br>
+                <label for="login-email">Correo Electrónico</label>
+                <input type="email" id="login-email" name="email" required>
+                <br>
+                <label for="login-password">Contraseña</label>
+                <input type="password" id="login-password" name="password" required>
+                <br>
+                <button type="submit">Iniciar Sesión</button>
+                <p>O inicia sesión con:</p>
+                <div class="social-login">
+                    <button type="button" class="google-login" id="google">Google</button>
+                    <button type="button" class="facebook-login">Facebook</button>
+                </div>
+            </form>
+            
+            <!-- Formulario de Registro -->
+            <form id="register-form" action="/registrarse" method="POST" style="display: none;">
+                <label for="register-name">Nombre Completo</label>
+                <input type="text" id="register-name" name="name" required>
+                <br>
+                <label for="register-email">Correo Electrónico</label>
+                <input type="email" id="register-email" name="email" required>
+                <br>
+                <label for="register-password">Contraseña</label>
+                <input type="password" id="register-password" name="password" required>
+                <br>
+                <label for="register-confirm-password">Confirmar Contraseña</label>
+                <input type="password" id="register-confirm-password" name="confirm_password" required>
+                <br>
+                <button type="submit">Registrarse</button>
+                <p>O regístrate con:</p>
+                <div class="social-login">
+                    <button type="button" class="google-login">Google</button>
+                    <button type="button" class="facebook-login">Facebook</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./assets/form.js"></script>
+</body>
+</html>

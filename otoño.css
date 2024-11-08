@@ -1,0 +1,279 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+ }
+ 
+ 
+ header aside {
+     width: 15%;
+     height: 100%;
+     background: #fff;
+     padding: 15px 0px 15px 30px;
+   }
+   header aside {
+     width: 15%;
+     height: 100%;
+     background: #fff;
+     padding: 15px 0px 15px 30px;
+   }
+   
+   header section {
+     position: relative;
+     width: 85%;
+     height: 100%;
+     /* border: 2px solid green;*/
+   }
+   
+   header aside .logo {
+     font-size: 30px;
+     color: #000000;
+   }
+   
+   header aside ul {
+     list-style-type: none;
+     margin-top: 50px;
+   }
+   
+   header aside ul li {
+     padding: 10px 0px;
+     margin-top: 10px;
+   }
+   
+   header aside ul li a {
+     text-decoration: none;
+     color: rgb(0, 0, 0, .5);
+     font-size: 16px;
+     font-weight: 500;
+     display: flex;
+     align-items: .3 linear;
+   }
+   
+   header aside ul li a:hover {
+     color: #000000;
+   }
+   
+   header aside ul li a i {
+     margin-right: 10px;
+     font-size: 20px;
+   }
+   
+   /*elemento de lista de clases activas*/
+   
+   header aside ul .li_active {
+     border-right: 3px solid #000000;
+   }
+   
+   header aside ul .li_active a {
+     color: #000000;
+   }
+   
+   header aside ul .li_active a {
+     color: #000000;
+   }
+   
+   header aside button {
+     margin-top: 40px;
+     padding: 10px 50px;
+     border-radius: 20px;
+     border: none;
+     outline: none;
+     color: #fff;
+     background: #000000;
+     transition: .3s linear;
+     cursor: pointer;
+   }
+   
+   header aside button:hover {
+     background: #000000;
+   }
+ 
+ nav ul {
+     list-style: none;
+     padding: 0;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ nav ul li {
+     display: inline;
+     margin: 0 15px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ nav ul li a {
+     color: white;
+     text-decoration: none;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ main {
+     padding: 20px;
+ }
+ 
+ footer {
+     text-align: center;
+     padding: 20px;
+     background: #333;
+     color: white;
+     position: absolute;
+     width: 100%;
+     bottom: 0;
+ }
+ 
+ 
+ .container {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     gap: 15px;
+     padding: 20px;
+ 
+ }
+ 
+ .container img {
+     width: 100%;
+     height: auto;
+     border-radius: 8px;
+     transition: transform 0.2s;
+ }
+ 
+ .container img:hover {
+     transform: scale(1.05);
+    
+ }
+ 
+ 
+ 
+ 
+ body {
+     background-color: white;
+     color: black;
+     font-family: "Nunito", sans-serif;
+     font-family: "Bodoni Moda", serif;
+ }
+ 
+ p{
+   font-size: 40px;
+ }
+ 
+ 
+ /* Header y aside (barra lateral) */
+ header {
+     display: flex;
+     width: 100%;
+ }
+ 
+ /* Mover el aside al costado izquierdo */
+ aside {
+     position: fixed; /* Esto hace que el aside se quede fijo en la página */
+     top: 0;
+     left: 0;
+     width: 250px; /* Puedes ajustar el tamaño */
+     height: 100vh; /* La altura ocupará toda la pantalla */
+     background-color: #1da1f2; /* Color de fondo, puedes cambiarlo */
+     color: white;
+     padding-top: 20px;
+ }
+ 
+ aside a.logo {
+     display: block;
+     text-align: center;
+     font-size: 30px;
+     margin-bottom: 20px;
+     color: white;
+ }
+ 
+ aside ul {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ aside ul li {
+     padding: 10px;
+     margin: 0;
+ }
+ 
+ aside ul li a {
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+     display: block;
+ }
+ 
+ aside ul li:hover {
+     background-color: #0a85c3;
+ }
+ 
+ aside button {
+     margin-top: 20px;
+     width: 100%;
+     padding: 10px;
+     background-color: #00acee;
+     color: white;
+     border: none;
+     font-size: 16px;
+     cursor: pointer;
+ }
+ 
+ aside button:hover {
+     background-color: #0084b4;
+ }
+ 
+ /* Ajustar el contenido principal */
+ main {
+     margin-left: 260px; /* Asegura que el main no se sobreponga con el aside */
+     padding: 20px;
+     width: calc(100% - 260px); /* Ocupa el resto del espacio disponible */
+     box-sizing: border-box; /* Esto asegura que los bordes y padding se consideren dentro del tamaño del ancho */
+ }
+ 
+ /* Estilos para los encabezados */
+ h2, h3 {
+     color: #333;
+ }
+ 
+ /* Estilos adicionales para la galería de imágenes */
+ .container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     margin-top: 20px;
+ }
+ 
+ .container img {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+ }
+ 
+ 
+ /* Asegura que no haya márgenes predeterminados */
+ body, html {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ /* Posiciona el logo en la esquina superior izquierda */
+ header {
+   position: relative; /* Lo dejamos relativo para que los demás elementos se posicionen dentro */
+ }
+ 
+ /* Estilos del logo */
+ .logo {
+   position: absolute; /* Posiciona el logo de forma absoluta */
+   top: 10px; /* 10px de margen desde el borde superior */
+   left: 10px; /* 10px de margen desde el borde izquierdo */
+   width: 90px; /* Ajusta el tamaño del logo */
+   height: auto;
+   z-index: 100; /* Asegura que el logo esté por encima de otros elementos */
+ }
+ 
+ 
+ 
+ 
+  
+ 
+        
+ 
+         
+        

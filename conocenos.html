@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conocenos</title>
+    <link rel="stylesheet" href="conocenos.css">
+    <link rel="icon" href="imagenes/icono.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>INTEGRANTES DE TRENDY FASHION</h1>
+        <div class="cards">
+            <div class="card" onclick="showDetails('integrante1')">
+                <img src="imagenes/gaby.jpeg" alt="Integrante 1">
+                <h3>Gaby</h3>
+                <p>Se encargo del firebase y el javascript de esta gran red sobre moda.</p>
+            </div>
+            <div class="card" onclick="showDetails('integrante2')">
+                <img src="imagenes/ale.jpeg" alt="Integrante 2">
+                <h3>Alessandra</h3>
+                <p>Se encargo del css de la pagina principal y del diseño distruido. </p>
+            </div>
+            <div class="card" onclick="showDetails('integrante3')">
+                <img src="imagenes/nico.jpeg" alt="Integrante 3">
+                <h3>Nicole</h3>
+                <p>Se encargo de la adaptacion de una pagina de tendencias y el diseño, orientacion que tendria esta red social.</p>
+            </div>
+            <div class="card" onclick="showDetails('integrante4')">
+                <img src="imagenes/dani.jpeg" alt="Integrante 4">
+                <h3>Danahi</h3>
+                <p>Se encargo de la creacion de pagina de estacion que se encuentran en los botones laterales de la pagina. </p>
+            </div>
+            <div class="card" onclick="showDetails('integrante5')">
+                <img src="integrante5.jpg" alt="Integrante 5">
+                <h3>Kiara</h3>
+                <p>Se encargo de la creacion de los diseños de la pagina como imagenes, presentacion , inspiracion.</p>
+            </div>
+        </div>
+        <div class="details" id="details">
+            <button onclick="closeDetails()">Cerrar</button>
+            <h2 id="detail-name"></h2>
+            <p id="detail-description"></p>
+        </div>
+    </div>
+    <script src="conocenos.js"></script>
+</body>
+</html>
